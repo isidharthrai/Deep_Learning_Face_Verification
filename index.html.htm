@@ -1,0 +1,100 @@
+<!DOCTYPE HTML>
+<HTML>
+<HEAD>
+<META http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<META http-equiv="X-UA-Compatible" content="IE=8">
+<TITLE>Deep Learning Face Verification System</TITLE>
+
+<STYLE type="text/css">
+
+body {margin-top: 0px;margin-left: 0px;}
+
+#page_1 {position:relative; overflow: hidden;margin: 49px 0px 86px 48px;padding: 0px;border: none;width: 768px;}
+
+
+
+
+
+#page_2 {position:relative; overflow: hidden;margin: 49px 0px 602px 48px;padding: 0px;border: none;width: 724px;}
+
+
+
+
+
+.ft0{font: bold 19px 'Arial';text-decoration: underline;line-height: 22px;}
+.ft1{font: bold 10px 'Arial';line-height: 18px;}
+.ft2{font: bold 13px 'Arial';line-height: 16px;}
+.ft3{font: bold 11px 'Arial';line-height: 17px;}
+.ft4{font: bold 12px 'Arial';line-height: 15px;}
+.ft5{font: bold 12px 'Arial';line-height: 16px;}
+.ft6{font: bold 10px 'Arial';line-height: 17px;}
+
+.p0{text-align: left;margin-top: 0px;margin-bottom: 0px;}
+.p1{text-align: justify;padding-right: 44px;margin-top: 11px;margin-bottom: 0px;}
+.p2{text-align: justify;padding-right: 49px;margin-top: 13px;margin-bottom: 0px;}
+.p3{text-align: justify;padding-right: 45px;margin-top: 12px;margin-bottom: 0px;}
+.p4{text-align: left;margin-top: 8px;margin-bottom: 0px;}
+.p5{text-align: left;margin-top: 11px;margin-bottom: 0px;}
+.p6{text-align: left;padding-left: 13px;margin-top: 10px;margin-bottom: 0px;}
+.p7{text-align: left;padding-left: 48px;margin-top: 10px;margin-bottom: 0px;}
+.p8{text-align: left;padding-left: 48px;margin-top: 11px;margin-bottom: 0px;}
+.p9{text-align: left;padding-left: 96px;margin-top: 10px;margin-bottom: 0px;}
+.p10{text-align: left;padding-left: 96px;margin-top: 11px;margin-bottom: 0px;}
+.p11{text-align: left;margin-top: 10px;margin-bottom: 0px;}
+.p12{text-align: justify;padding-right: 44px;margin-top: 10px;margin-bottom: 0px;}
+.p13{text-align: justify;margin-top: 0px;margin-bottom: 0px;}
+.p14{text-align: justify;margin-top: 8px;margin-bottom: 0px;}
+.p15{text-align: justify;padding-right: 1px;margin-top: 13px;margin-bottom: 0px;}
+.p16{text-align: justify;margin-top: 12px;margin-bottom: 0px;}
+.p17{text-align: justify;padding-right: 4px;margin-top: 15px;margin-bottom: 0px;}
+
+</STYLE>
+</HEAD>
+
+<BODY>
+<DIV id="page_1">
+
+
+
+<P class="p0 ft0">Detailed explanation of Automated Attendance System</P>
+<br><br>
+<P class="p1 ft1">Project Credits: Sunil Aryal (Chandigarh University, Apex Institute of Technology, Students), Rachhpal Singh (Khalsa College), Arnav Sood and Gaurav Thapa (Chandigarh University - Apex Institute of Technology)</P>
+<br>
+
+<P class="p1 ft1"><u>References</u><br>Aryal, Sunil and Singh, Rachhpal and Sood, Arnav and Thapa, Gaurav, Automatic Attendance System Using Deep Learning (March 14, 2019). Available at SSRN: <a href="https://ssrn.com/abstract=3352376">https://ssrn.com/abstract=3352376</a> or <a href = "http://dx.doi.org/10.2139/ssrn.3352376">http://dx.doi.org/10.2139/ssrn.335237</a></P>
+
+<br><br>
+
+<P class="p1 ft1">In this system, we have integrated facial recognition algorithm with machine learning algorithm into the process of automatic attendance system. This system is implemented in basic and fundamental principle on the presence of a digital camera in the classroom. The digital camera would capture 2 images in the time interval of 25 minutes in a lecture of 50 minutes. Now image would be provided to system and system would extract all the faces from the image. Thereafter, the face would be compared with the existing trained model of faces and checks if face exists or not. If face exists on current database then the system would save unique ID of a student in attendance database or discards in case student doesn’t exist in classroom database. In this approach, we had also used Tensorflow estimator API to classify different faces using Deep Neural Network (DNN) which again gets trained from the images extracted in real time. The designed system does not interrupt class in any manner. Moreover, Feedback feature of the proposed project helps to train our model over verified images from the tested process. Therefore, it saves potential time of students as well as of teachers/administrators. Hence, increasing the accuracy over time. From the experiment analysis it is found that the accuracy of proposed system is 97%. Hence proposed system doesn’t require any rectification and verification from teachers.</P>
+<P class="p2 ft2">Various problems have also been addressed such as <NOBR>real-time</NOBR> face detection, multiple face detection and integration with the machine learning algorithm.</P>
+<P class="p3 ft3">During the implementation of an idea, the real problem was the extraction of a face from the image in real time. So, to address this issue we used Tensorflow estimator API to classify different faces using Deep Neural Network (DNN) which again gets trained from the images extracted in real time. However, detecting face like patterns constitutes just a part of the problem. One must implement a face recognition algorithm which is used to positively identify a student from a database of students. To address this issue, we have used facenet developed by Google which is a <NOBR>pre-trained</NOBR> model in 150000 images inspired by google pixel.</P>
+<P class="p4 ft4">This system can be classified into 3 different steps in broad. It involves Image Capture, Face Detection and Face Recognition.</P>
+<P class="p5 ft2">A simple implementation explained via pseudocode is explained here :</P>
+<P class="p6 ft2">scan room with digital camera</P>
+<P class="p6 ft2">for each detected object (face):</P>
+<P class="p7 ft2">transfer the object in server</P>
+<P class="p8 ft2">next object</P>
+<P class="p6 ft2">for each face in server:</P>
+<P class="p7 ft2">if face in student’s database</P>
+<P class="p9 ft2">record student as enrolled</P>
+<P class="p10 ft2">save face in students database</P>
+<P class="p7 ft2">else</P>
+<P class="p9 ft2">mark face as unrecognized</P>
+<P class="p5 ft2">next face</P>
+<P class="p11 ft2">Using three rotating camera we would have <NOBR>180-degree</NOBR> view of entire classroom.</P>
+<P class="p3 ft5">A different approach for such a system would be placing the camera in front of entering a door. This would be less work to be done for detection of face for the system but there would be very less time for a system to capture, store, detect and recognize the face. So, placing the camera in front of the class would be helpful for the errorless attendance system.</P>
+<P class="p3 ft6">For fulfilling system requirement, a classroom must have a system(computer) which relates to 3 cameras of classroom and active internet. Now each system of the classroom would be connected to a master server responsible for the attendance of an entire university.</P>
+<P class="p12 ft6">Detecting a face is an object detection task, where the object of interest, in this case, is the face. However, many factors can influence the face detection algorithms, such as scaling, position, rotation, lighting, etc. The same problems arise when one wants to identify a face, with an addition to some other obstacles which is discussed shortly. There are plenty of face detection algorithms which can effectively detect a face (or any other specific object) in a picture. In the system presented here, most students face the camera frontally, so we chose to use the HAAR classifier for face detection. This classifier is implemented on Intel’s Open CV library.</P>
+</DIV>
+<DIV id="page_2">
+
+
+<P class="p13 ft6">In Open CV library, higher cascade and eigenface algorithm are used. Eigenface is most commonly and widely used PCA (Principle of Component Analysis) approach facial recognition system. In this approach the face into essential small set characteristics: eigenface which is also the main component of learning or training data set. Finally, recognition of the face is done by the projection of the image in eigenface vector subspace and the person’s face is classified based on the position of an individual to eigenface. The advantages of eigenface over other algorithm or techniques is its unsophistication, speed and insensitive to little changes in the face.</P>
+<P class="p14 ft5">With this approach, optimized marking of entities can be automated. This process will take minimum amount of time and will not be affected due to external factors like shadow, dust, etc. With implementation of supervised deep learning and transfer learning approach, our model can predict with ease in parameter tuning and less computation for training. The bias and variance trade off will decrease periodically with increased number of samples or input. After training face images, we will train the image to classify whether it’s a live object or some 2D photograph.</P>
+<P class="p15 ft5">As compared to traditional computer vision algorithm like CNN (Conv Net) this model will use SSD (Single Shot <NOBR>Multi-Box</NOBR> Detect) with ease in architecture(resent). The total training time decreases by using 1*1 convolution window.</P>
+<P class="p16 ft5">An automatic attendance system is a one of the most necessary tools for any organization. Most of the today’s system are time taking and require somehow manual intervention of either student or teacher. Our approach targets to solve the problems by face recognition in the process. Even this system cannot completely identify each student present in class and has lot of space of improvement on basis and time of computation and accuracy. Since our system is implemented on modular approach, we can keep improving until we reach acceptable accuracy. As our system is only concerned on marking attendance automatically there is no module that deals with security which is one of the most important room for improvement in next phase. Whenever an image is stored on our servers, it must be impossible for a person to use that image.</P>
+<P class="p17 ft2">As our system is live based system, we can use this system for live surveillance as well keeping point in consideration that data is to be secured in all way possible. We too have room for improvement whether face is a face or a 2D picture which would be another consideration for improving of the system in another phase.</P>
+</DIV>
+
+</BODY>
+</HTML>
